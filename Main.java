@@ -19,7 +19,6 @@ import java.util.Scanner;
 class Main
 {
     public static String parseInput(String input) {
-        String alphanum = "^[a-zA-Z0-9]*$";
         return input.replaceAll("[^a-zA-Z0-9_-]", "");
     }
 
@@ -27,12 +26,21 @@ class Main
 
         // Develop your program here.
         // The following is just a sample statement and and you need to replace it with your code
-
+        boolean isPalindrome = true;
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        System.out.println(parseInput(input));
+        String parsedString = parseInput(input);
+        System.out.println(parsedString);
 
-        System.out.println("Hello world!");
+        if(parsedString.length() % 2 == 0) {
+            for (int i = 0; i < parsedString.length()/2; i++) {
+                if(parsedString.charAt(i) != parsedString.charAt(parsedString.length() - i - 1)) {
+                    isPalindrome = false;
+                    break;
+                }
+            }
+        }
+        System.out.println("Palindrome: " + isPalindrome);
     }
 }
 
