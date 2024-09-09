@@ -41,9 +41,9 @@ class Main
             }
         }
         if (isPalindrome) {
-            System.out.println("YES");
+            System.out.println("TRUE");
         } else {
-            System.out.println("NO");
+            System.out.println("FALSE");
         }
     }
 }
