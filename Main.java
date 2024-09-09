@@ -36,11 +36,14 @@ class Main
         for (int i = 0; i < parsedString.length()/2; i++) {
             if(parsedString.charAt(i) != parsedString.charAt(parsedString.length() - i - 1)) {
                 isPalindrome = false;
-                System.out.println("FALSE");
+
                 break;
-            } else {
-                System.out.println("TRUE");
             }
+        }
+        if (isPalindrome) {
+            System.out.println("YES");
+        } else {
+            System.out.println("NO");
         }
     }
 }
