@@ -8,10 +8,10 @@
  */
 
 // Finish the head comment with Abstract, Name, and Date.
-/*
- * Abstract: Describe the main ideas of the program.
- * Name: Write your name
- * Date: MM/DD/YYYY
+/* Title: CST370-HW2_2_Java
+ * Abstract: Program accepts a string as input and outputs whether or not the string is a Palindrome.
+ * Name: Bryan Zanoli
+ * Date: 09/09/2024
  */
 
 import java.util.Scanner;
@@ -30,7 +30,7 @@ class Main
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         String parsedString = (parseInput(input)).toUpperCase();
-        System.out.println(parsedString);
+        //System.out.println(parsedString);
 
 
         for (int i = 0; i < parsedString.length()/2; i++) {
