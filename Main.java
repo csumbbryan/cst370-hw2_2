@@ -29,7 +29,7 @@ class Main
         boolean isPalindrome = true;
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
-        String parsedString = parseInput(input);
+        String parsedString = (parseInput(input)).toUpperCase();
         System.out.println(parsedString);
 
         if(parsedString.length() % 2 == 0) {
