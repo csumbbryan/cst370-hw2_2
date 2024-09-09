@@ -32,12 +32,11 @@ class Main
         String parsedString = (parseInput(input)).toUpperCase();
         System.out.println(parsedString);
 
-        if(parsedString.length() % 2 == 0) {
-            for (int i = 0; i < parsedString.length()/2; i++) {
-                if(parsedString.charAt(i) != parsedString.charAt(parsedString.length() - i - 1)) {
-                    isPalindrome = false;
-                    break;
-                }
+
+        for (int i = 0; i < parsedString.length()/2; i++) {
+            if(parsedString.charAt(i) != parsedString.charAt(parsedString.length() - i - 1)) {
+                isPalindrome = false;
+                break;
             }
         }
         System.out.println("Palindrome: " + isPalindrome);
